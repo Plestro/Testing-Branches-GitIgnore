@@ -31,9 +31,7 @@ namespace WebApplication1
 
             DAL.OpenConnection(connString);
 
-            DataTable dt = DAL.GetCustomerInfo();
-  
-            
+            DataTable dt = DAL.GetCustomerInfo();           
             DataTable df = DAL.GetCostaInfo();
             DataTable dg = DAL.GetPlestroInfo();
             DataTable dg2 = DAL.GetPlestroInfo();
