@@ -25,7 +25,6 @@ namespace WebApplication1
                 LoadData();
             }
         }
-
         protected void LoadData()
         {
 
@@ -41,7 +40,18 @@ namespace WebApplication1
             CostaGrid.DataBind();
 
 
+
+            gvKeegan.DataSource = dg.DefaultView;
+            gvKeegan.DataBind();
+
+          
+
             DAL.CloseConnection();
+
+        }
+
+        public void Test()
+        {
 
         }
     }
