@@ -45,9 +45,16 @@
             </asp:GridView>
         </div>
 
+        
+        
+        
+
+        
+        
+        
         <div class="col-md-4">
             <h2>Customer</h2>
-            <asp:GridView ID="GridViewSibo" runat="server">
+            <asp:GridView ID="CostaGrid" runat="server">
 
             </asp:GridView>
         </div>

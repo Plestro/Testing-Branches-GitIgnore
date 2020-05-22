@@ -63,7 +63,7 @@ namespace TestingDAL.Connected_Layer
 
         }
 
-         public DataTable GetCustomerDetails()
+        public DataTable GetCostaInfo()
         {
             DataTable dt = new DataTable();
             string query = "Select * from tblMergeDemo";
@@ -86,7 +86,7 @@ namespace TestingDAL.Connected_Layer
 
 
             return dt;
-         
+
 
         }
     }
