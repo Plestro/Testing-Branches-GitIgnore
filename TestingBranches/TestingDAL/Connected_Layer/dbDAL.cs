@@ -62,5 +62,32 @@ namespace TestingDAL.Connected_Layer
          
 
         }
+
+        public DataTable GetCostaInfo()
+        {
+            DataTable dt = new DataTable();
+            string query = "Select * from tblMergeDemo";
+
+            try
+            {
+                using (SqlCommand cmd = new SqlCommand(query, sqlConnection))
+                {
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    dt.Load(reader);
+                    reader.Close();
+                }
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+
+            return dt;
+
+
+        }
     }
 }

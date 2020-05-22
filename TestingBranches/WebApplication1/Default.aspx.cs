@@ -33,8 +33,13 @@ namespace WebApplication1
 
             DataTable dt = DAL.GetCustomerInfo();
 
+            DataTable df = DAL.GetCostaInfo();
+
             gvCustomers.DataSource = dt.DefaultView;
             gvCustomers.DataBind();
+
+            CostaGrid.DataSource = df.DefaultView;
+            CostaGrid.DataBind();
 
             DAL.CloseConnection();
 
