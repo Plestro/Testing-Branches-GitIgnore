@@ -32,6 +32,7 @@ namespace WebApplication1
 
             DataTable dt = DAL.GetCustomerInfo();           
             DataTable df = DAL.GetCostaInfo();
+            DataTable dg = DAL.GetPlestroInfo();
 
             gvCustomers.DataSource = dt.DefaultView;
             gvCustomers.DataBind();
@@ -44,7 +45,13 @@ namespace WebApplication1
             gvKeegan.DataSource = dg.DefaultView;
             gvKeegan.DataBind();
 
-          
+            gvKeegan2.DataSource = dg.DefaultView;
+            gvKeegan2.DataBind();
+
+            gvKeegan3.DataSource = dg.DefaultView;
+            gvKeegan3.DataBind();
+
+
 
             DAL.CloseConnection();
 
