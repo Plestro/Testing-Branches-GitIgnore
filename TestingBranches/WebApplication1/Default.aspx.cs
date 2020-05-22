@@ -36,7 +36,10 @@ namespace WebApplication1
 
             gvCustomers.DataSource = dt.DefaultView;
             gvCustomers.DataBind();
-            
+
+            CostaGrid2.DataSource = df.DefaultView;
+            CostaGrid2.DataBind();
+
             CostaGrid.DataSource = df.DefaultView;
             CostaGrid.DataBind();
 
