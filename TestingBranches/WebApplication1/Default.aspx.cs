@@ -30,17 +30,28 @@ namespace WebApplication1
 
             DAL.OpenConnection(connString);
 
-            DataTable dt = DAL.GetCustomerInfo();
+            DataTable dt = DAL.GetCustomerInfo();           
+            DataTable df = DAL.GetCostaInfo();
             DataTable dg = DAL.GetPlestroInfo();
 
             gvCustomers.DataSource = dt.DefaultView;
             gvCustomers.DataBind();
+            
+            CostaGrid.DataSource = df.DefaultView;
+            CostaGrid.DataBind();
+
 
 
             gvKeegan.DataSource = dg.DefaultView;
             gvKeegan.DataBind();
 
-          
+            gvKeegan2.DataSource = dg.DefaultView;
+            gvKeegan2.DataBind();
+
+            gvKeegan3.DataSource = dg.DefaultView;
+            gvKeegan3.DataBind();
+
+
 
             DAL.CloseConnection();
 

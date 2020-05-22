@@ -24,6 +24,15 @@ namespace WebApplication1
         protected global::System.Web.UI.WebControls.GridView gvCustomers;
 
         /// <summary>
+        /// CostaGrid control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView CostaGrid;
+
+        /// <summary>
         /// gvKeegan control.
         /// </summary>
         /// <remarks>
@@ -31,5 +40,23 @@ namespace WebApplication1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gvKeegan;
+
+        /// <summary>
+        /// gvKeegan2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvKeegan2;
+
+        /// <summary>
+        /// gvKeegan3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvKeegan3;
     }
 }
