@@ -33,23 +33,12 @@ namespace WebApplication1
 
             DataTable dt = DAL.GetCustomerInfo();           
             DataTable df = DAL.GetCostaInfo();
-            DataTable dg = DAL.GetPlestroInfo();
-            DataTable dg2 = DAL.GetPlestroInfo();
-
 
             gvCustomers.DataSource = dt.DefaultView;
             gvCustomers.DataBind();
             
             CostaGrid.DataSource = df.DefaultView;
             CostaGrid.DataBind();
-
-            gvKeegan.DataSource = dg.DefaultView;
-            gvKeegan.DataBind();
-
-            gvKeegan2.DataSource = dg2.DefaultView;
-            gvKeegan2.DataBind();
-
-            //KEEGAN WAS HERE TO MAKE A COMMENT
 
 
             DAL.CloseConnection();
