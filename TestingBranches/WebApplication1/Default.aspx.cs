@@ -25,23 +25,43 @@ namespace WebApplication1
                 LoadData();
             }
         }
-
         protected void LoadData()
         {
 
             DAL.OpenConnection(connString);
 
-            DataTable dt = DAL.GetCustomerInfo();
-            DataTable dt1 = DAL.GetCustomerDetails();
+            DataTable dt = DAL.GetCustomerInfo();           
+            DataTable df = DAL.GetCostaInfo();
+            DataTable dg = DAL.GetPlestroInfo();
 
             gvCustomers.DataSource = dt.DefaultView;
             gvCustomers.DataBind();
 
-            GridViewSibo.DataSource = dt1.DefaultView;
-            GridViewSibo.DataBind();
+            CostaGrid2.DataSource = df.DefaultView;
+            CostaGrid2.DataBind();
+
+            CostaGrid.DataSource = df.DefaultView;
+            CostaGrid.DataBind();
+
+
+
+            gvKeegan.DataSource = dg.DefaultView;
+            gvKeegan.DataBind();
+
+            gvKeegan2.DataSource = dg.DefaultView;
+            gvKeegan2.DataBind();
+
+            gvKeegan3.DataSource = dg.DefaultView;
+            gvKeegan3.DataBind();
+
 
 
             DAL.CloseConnection();
+
+        }
+
+        public void Test()
+        {
 
         }
     }

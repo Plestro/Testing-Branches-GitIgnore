@@ -43,14 +43,43 @@
             <asp:GridView ID="gvCustomers" runat="server">
 
             </asp:GridView>
+        </div> 
+        
+         <div class="col-md-4">
+            <h2>Customer</h2>
+            <asp:GridView ID="CostaGrid2" runat="server">
+
+            </asp:GridView>
         </div>
 
         <div class="col-md-4">
             <h2>Customer</h2>
-            <asp:GridView ID="GridViewSibo" runat="server">
+            <asp:GridView ID="CostaGrid" runat="server">
 
             </asp:GridView>
         </div>
+
+        <div class="col-md-4">
+            <h2>Customer</h2>
+            <asp:GridView ID="gvKeegan" runat="server">
+
+            </asp:GridView>
+        </div>
+
+          <div class="col-md-4">
+            <h2>Customer</h2>
+            <asp:GridView ID="gvKeegan2" runat="server">
+
+            </asp:GridView>
+        </div>
+
+          <div class="col-md-4">
+            <h2>Customer</h2>
+            <asp:GridView ID="gvKeegan3" runat="server">
+
+            </asp:GridView>
+        </div>
+
     </div>
 
 </asp:Content>
