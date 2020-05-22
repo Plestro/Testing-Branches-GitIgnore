@@ -11,6 +11,21 @@ namespace TestingBranches
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string result = "";
+            sqlConnection = new SqlConnection { ConnectionString = connectionString };
+
+            try
+            {
+                sqlConnection.Open();
+            }
+            catch (Exception ex)
+            {
+                result = $"{ex.Message.ToString()}";
+            }
+
+            return result;
+
+            sqlConnection.Close();
 
         }
     }

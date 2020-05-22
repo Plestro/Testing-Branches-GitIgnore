@@ -37,6 +37,15 @@
                 <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
             </p>
         </div>
+        <div class="KeegansGrid">
+            <h2>Get more libraries</h2>
+            <p>
+               Once upon a time Keegan went to Neverland to find DOneky, but all he could find was a rock, a dull grey rock with a smily face on it, poor Keegan.
+            </p>
+            <p>
+                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
+            </p>
+        </div>
     </div>
 
 </asp:Content>
