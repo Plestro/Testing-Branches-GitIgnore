@@ -63,7 +63,7 @@ namespace TestingDAL.Connected_Layer
 
         }
 
-        public DataTable GetPlestroInfo()
+         public DataTable GetCustomerDetails()
         {
             DataTable dt = new DataTable();
             string query = "Select * from tblMergeDemo";

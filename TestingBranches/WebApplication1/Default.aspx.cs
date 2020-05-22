@@ -32,13 +32,14 @@ namespace WebApplication1
             DAL.OpenConnection(connString);
 
             DataTable dt = DAL.GetCustomerInfo();
-            DataTable dg = DAL.GetPlestroInfo();
+            DataTable dt1 = DAL.GetCustomerDetails();
 
             gvCustomers.DataSource = dt.DefaultView;
             gvCustomers.DataBind();
 
-            gvKeegan.DataSource = dg.DefaultView;
-            gvKeegan.DataBind();
+            GridViewSibo.DataSource = dt1.DefaultView;
+            GridViewSibo.DataBind();
+
 
             DAL.CloseConnection();
 
