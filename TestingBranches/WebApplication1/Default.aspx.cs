@@ -34,11 +34,11 @@ namespace WebApplication1
             DataTable dt = DAL.GetCustomerInfo();
             DataTable dg = DAL.GetPlestroInfo();
 
-            gvCustomers.DataSource = dg.DefaultView;
+            gvCustomers.DataSource = dt.DefaultView;
             gvCustomers.DataBind();
 
-            KeeganDemo.DataSource = dt.DefaultView;
-            KeeganDemo.DataBind();
+            gvKeegan.DataSource = dg.DefaultView;
+            gvKeegan.DataBind();
 
             DAL.CloseConnection();
 
